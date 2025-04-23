@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: task-manager-backend
+    env: node
+    buildCommand: 'npm install'
+    startCommand: 'node server.js'
+    repo: https://github.com/Aayushi-codes-23/task_manager
+    branch: main
+    port: 3000
+  - type: web
+    name: task-manager-frontend
+    env: node
+    buildCommand: 'npm install'
+    startCommand: 'npm start'
+    repo: https://github.com/Aayushi-codes-23/task_manager
+    branch: main
+    port: 5000
